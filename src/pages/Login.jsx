@@ -17,7 +17,7 @@ function Login(){
 
     try {
       
-      const response = await axios.post('http://localhost:5000/api/auth/login', formData)
+      const response = await axios.post('https://auth-backend-yeaz.onrender.com/api/auth/login', formData)
       localStorage.setItem('token', response.data.token)
       alert('successful login.')
       navigate('/profile') 

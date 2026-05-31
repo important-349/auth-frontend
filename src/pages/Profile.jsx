@@ -20,7 +20,7 @@ useEffect(() => {
   }
 
   // fetch user data from backend, sending token in the header
-  axios.get('http://localhost:5000/api/user/profile', {
+  axios.get('https://auth-backend-yeaz.onrender.com/api/user/profile', {
     headers: {
       Authorization: `Bearer ${token}`
     }
